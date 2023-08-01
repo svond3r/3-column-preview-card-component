@@ -1,0 +1,128 @@
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    position: absolute;
+    bottom: 50px;
+    border-radius: 26.5px;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    transition-duration: 500ms;
+    border: 2px solid white;    
+}
+
+#sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+#suvs button{
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury button{
+    color: hsl(179, 100%, 13%);
+}
+    
+#sedans button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+#suvs button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+#luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+section {
+    padding: 50px;
+    width: 210px;
+    height: 420px;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    overflow-y: scroll;
+    margin: 15px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 959px) {
+    #sedans {
+        border-radius: 6px  0 0 6px;
+    }
+    #suvs {
+        border-radius: 0 6px 6px 0;
+    }
+    #luxury {
+        border-radius: 0 0 6px 6px;
+    }
+}
+
+@media only screen and (max-width: 649px) {
+    #sedans {
+        border-radius: 6px 6px 0 0;
+    }
+    #suvs {
+        border-radius: 0;
+    }
+    #luxury {
+        border-radius: 0 0 6px 6px;
+    }
+    section {
+        height: 370px;
+    }
+}
